@@ -1,0 +1,190 @@
+/* General Body Styling */
+body {
+    background-image: url('./images/London.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-attachment: fixed; /* Fix the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(49, 158, 213, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .logo img {
+    height: 40px;
+    margin-left: 20px;
+  }
+  
+  nav .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav .nav-links ul li {
+    margin-right: 20px;
+  }
+  
+  nav .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav .search-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  nav .search-container input,
+  nav .search-container button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  nav .search-container input {
+    width: 250px;
+  }
+  
+  nav .search-container button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav .search-container button:hover {
+    background-color: #45a049;
+  }
+  
+  nav .search-container button#reset-btn {
+    background-color: #f44336;
+  }
+  
+  nav .search-container button#clear-btn {
+    background-color: #2196f3;
+  }
+  
+  nav .search-container button#reset-btn:hover {
+    background-color: #e53935;
+  }
+  
+  nav .search-container button#clear-btn:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Social Links - Stacked vertically in the upper-left corner */
+  .social-links {
+    position: fixed;
+    top: 70px; /* Adjust the distance from the top */
+    left: 20px; /* Adjust the distance from the left */
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+  
+  .social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links ul li {
+    display: block; /* Make each icon block-level for vertical stacking */
+    margin-bottom: 10px; /* Add spacing between icons */
+  }
+  
+  .social-links ul li a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-links ul li a img:hover {
+    transform: scale(1.1); /* Hover effect for icons */
+  }
+  
+  /* Heading and Intro Text */
+  h1 {
+    margin-top: 100px;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .intro-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .intro-text p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  /* Recommendations Section */
+  .recommendations-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .recommendation {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .recommendation img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .recommendation h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 15px 0;
+  }
+  
+  .recommendation p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+    line-height: 1.4;
+  }
+  

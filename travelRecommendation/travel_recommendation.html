@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TravelBloom - Explore the World</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="TravelBloom Logo" />
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="travel_recommendation.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for beach, temple, or country" />
+        <button id="search-btn">🔍</button>
+        <button id="reset-btn">Reset</button>
+        <button id="clear-btn">Clear</button>
+      </div>
+    </nav>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <ul>
+        <li><a href="https://bluesky.com" target="_blank"><img src="./images/bluesky.png" alt="Bluesky Logo" /></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="./images/instagram.png" alt="Instagram Logo" /></a></li>
+        <li><a href="https://mastodon.social" target="_blank"><img src="./images/mastadon.png" alt="Mastodon Logo" /></a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <h1>Welcome to TravelBloom!</h1>
+
+    <div class="intro-text">
+      <p id="introText">
+        Discover the world's best travel destinations. From pristine beaches to historic temples, find your next adventure today!
+      </p>
+    </div>
+    <div id="recommendations"></div>
+    <!-- Recommendations Section -->
+    <div id="recommendations" class="recommendations-container"></div>
+
+    <!-- External JS file -->
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
