@@ -1,0 +1,375 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("images/London.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+header {
+    margin-bottom: 30px; /* Adjust as needed to control space below the nav */
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 70px;           /* adjust size as needed */
+    height: 70px;          /* same as width for perfect circle */
+    border-radius: 50%;     /* circular shape */
+    object-fit: cover;      /* ensures image covers the circle nicely */
+    border: 3px solid #fff; /* optional white border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* optional shadow */
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex; /* Flexbox layout for nav links */
+    justify-content: center; /* Center the links horizontally */
+}
+
+.nav-links ul {
+    list-style: none; /* Removes default list styling (bullets) */
+    display: flex; /* Display links in a row */
+}
+
+.nav-links ul li {
+    margin: 0 20px; /* Adds spacing between the links */
+}
+
+.nav-links ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* Sets text color to white */
+    font-size: 18px; /* Sets font size for links */
+    font-weight: bold; /* Makes link text bold */
+    transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+.nav-links ul li a:hover {
+    color: #f4a261; /* Changes link color on hover to a warm orange */
+}
+
+/* SEARCH BAR STYLING */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+}
+
+.search-container input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #f4a261;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #e07b55;
+}
+
+.search-container input:focus {
+    border-color: #e76f51;
+}
+
+/* EXPLORE SECTION */
+.explore {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#explore-travel {
+    max-width: 800px;
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#explore-travel h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#explore-travel p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+#explore-travel .intro-text {
+    background-color: rgba(244, 162, 97, 0.1);
+    padding: 20px;
+    border-left: 5px solid #f4a261;
+    border-radius: 5px;
+    font-weight: 500;
+    color: black; /* This sets the text color */
+}
+
+/* SOCIAL MEDIA ICONS */
+.icons {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #ff6f00;
+    color: rgb(255, 254, 252);
+}
+
+/* RESULTS CONTAINER */
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    min-height: 200px; /* keeps space even when empty */
+    background-color: transparent; /* no white background */
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+#meet-team-header {
+    font-size: 2.5rem;
+    color: #eeebe7;
+    margin: 40px 0 30px;
+}
+
+/* TEAM CARDS LAYOUT */
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* INDIVIDUAL TEAM CARD */
+.team-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 12px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.team-card strong {
+    color: #ff7f00;
+}
+
+/* RECOMMENDATION ITEM */
+.recommendation-item {
+    flex: 1;
+    max-width: 500px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.recommendation-item img {
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recommendation-item h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #e17000;
+}
+
+.recommendation-item p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact-us {
+    font-size: 5rem; /* Make the font large */
+    color: #333; /* Set text color */
+    text-align: center; /* Centers the text horizontally */
+    margin: 40px 0; /* Add vertical margin to separate it from other elements */
+    padding: 0; /* Remove any extra padding */
+}
+
+.about-travel {
+    font-size: 5rem; /* Make the font large */
+    color: #333; /* Set text color */
+    text-align: center; /* Centers the text horizontally */
+    margin: 40px 0; /* Add vertical margin to separate it from other elements */
+    padding: 0; /* Remove any extra padding */
+}
+
+.about-text {
+font-size: 1.5rem; /* Make the font large */
+color: #333; /* Set text color */
+text-align: center; /* Centers the text horizontally */
+margin: 40px 0; /* Add vertical margin to separate it from other elements */
+padding: 0; /* Remove any extra padding */
+}
+
+.about-section {
+    background-color: rgba(225, 112, 0, 0.5); /* semi-transparent orange */
+    border-radius: 20px;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+/* Contact Form Container */
+.form-container {
+    max-width: 600px;
+    top-margin: 20px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+.form-container label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Form Inputs and Textarea */
+.form-container input,
+.form-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Form Button */
+.form-container button {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Button Hover Effect */
+.form-container button:hover {
+    background-color: #e76f00;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .team-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-cards {
+        grid-template-columns: 1fr;
+    }
+}
