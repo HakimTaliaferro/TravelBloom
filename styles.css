@@ -50,6 +50,15 @@ nav {
     transform: scale(1.05);
 }
 
+.logo-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 15px 20px;
+    transform: scale(1.05);
+    color: #ee4c06;
+    letter-spacing: 1px;
+}
 .nav-links {
     display: flex; /* Flexbox layout for nav links */
     justify-content: center; /* Center the links horizontally */
@@ -81,6 +90,7 @@ nav {
     display: flex;
     align-items: center;
     margin-top: -2px;
+    gap: 15px;  /* This will create space between buttons */
 }
 
 .search-container input {
@@ -90,7 +100,6 @@ nav {
     border-radius: 5px;
     outline: none;
     transition: border 0.3s ease-in-out;
-    margin-right: 10px;
 }
 
 .search-container button {
@@ -111,6 +120,7 @@ nav {
     border-color: #e76f51;
 }
 
+
 /* EXPLORE SECTION */
 .explore {
     padding: 60px 20px;
@@ -120,12 +130,13 @@ nav {
 }
 
 #explore-travel {
-    max-width: 800px;
+    width: 100%;
+    max-width: 1200px;
     text-align: center;
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 60px 30px;
+    border-bottom: 2px solid #e17000;
+    background-color: rgba(255, 255, 255, 0.8); /* optional: semi-transparent white box */
+    border-radius: 12px;
 }
 
 #explore-travel h1 {
