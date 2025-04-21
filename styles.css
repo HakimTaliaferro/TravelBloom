@@ -100,6 +100,7 @@ nav {
     border-radius: 5px;
     outline: none;
     transition: border 0.3s ease-in-out;
+    width: 400px;
 }
 
 .search-container button {
@@ -223,9 +224,19 @@ nav {
     max-width: 1200px;
     padding: 20px;
 }
+
+.meet-team-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background (0.8 is the opacity) */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center the text inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+    margin: 0 auto; /* This will center the box horizontally */
+    max-width: 800px; /* Set max width for the box */
+}
 #meet-team-header {
     font-size: 2.5rem;
-    color: #eeebe7;
+    color: #070606;
     margin: 40px 0 30px;
 }
 
@@ -388,7 +399,29 @@ padding: 0; /* Remove any extra padding */
 .form-container button:hover {
     background-color: #e76f00;
 }
+/* Contact Header Container */
+.contact-header-container {
+    background-color: rgba(225, 112, 0, 0.5); /* Transparent orange */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px 50px; /* Top and bottom padding of 30px, left and right padding of 50px */
+    margin: 40px auto 20px; /* 40px margin on top, 20px on bottom, auto for centering horizontally */
+    text-align: center; /* Center the text */
+    max-width: 600px; /* Optional: Limit the width */
+}
 
+/* Contact Header Text */
+.contact-us {
+    font-size: 5rem; /* Make the font large */
+    color: rgb(0, 0, 0); /* Text color */
+    margin: 0; /* Remove any margin from h2 */
+}
+.about-us-line {
+    border: none; /* Remove default styling */
+    height: 2px; /* Line height */
+    background-color: #000000; /* Line color */
+    margin-top: 10px; /* Space between the text and the line */
+    margin-bottom: 40px; /* Space below the line */
+}
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
     .team-cards {
